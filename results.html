@@ -6,7 +6,7 @@
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
 <script>
-  version = "Test Edition #1" //Remember to update this before making changes to the test itself!
+  version = "Test Edition #2" //Remember to update this before making changes to the test itself!
 </script>
 </head>
 <script type="application/javascript"
@@ -19,33 +19,33 @@
 
 <h1>Results</h1>
 
-<h2>Economic Axis: <span class="weight-300" id="economic-label"></span></h2>
+<h2>Technology Axis: <span class="weight-300" id="economic-label"></span></h2>
 <div class="axis">
-    <img id="img-equality" src="value_images/equality.svg" height="128pt"/>
+    <img id="img-equality" src="value_images/Pro_tech.svg" height="128pt"/>
     <div class="bar equality" id="bar-equality"><div class="text-wrapper" id="equality"></div></div>
     <div class="bar wealth" id="bar-wealth"><div class="text-wrapper" id="wealth"></div></div>
-    <img id="img-wealth" src="value_images/markets.svg" height="128pt"/>
+    <img id="img-wealth" src="value_images/anti-Tech.svg" height="128pt"/>
 </div>
-<h2>Diplomatic Axis: <span class="weight-300" id="diplomatic-label"></span></h2>
+<h2>Societal Axis: <span class="weight-300" id="diplomatic-label"></span></h2>
 <div class="axis">
-    <img id="img-might" src="value_images/nation.svg" height="128pt"/>
+    <img id="img-might" src="value_images/EGO (1).svg" height="128pt"/>
     <div class="bar might" id="bar-might"><div class="text-wrapper" id="might"></div></div>
     <div class="bar peace" id="bar-peace"><div class="text-wrapper" id="peace"></div></div>
-    <img id="img-peace" src="value_images/globe.svg" height="128pt"/>
+    <img id="img-peace" src="value_images/LiterallyMe.svg" height="128pt"/>
 </div>
-<h2>Civil Axis: <span class="weight-300" id="state-label"></span></h2>
+<h2>Philosophy Axis: <span class="weight-300" id="state-label"></span></h2>
 <div class="axis">
-    <img id="img-liberty" src="value_images/liberty.svg" height="128pt"/>
+    <img id="img-liberty" src="value_images/Nihilism.svg" height="128pt"/>
     <div class="bar liberty" id="bar-liberty"><div class="text-wrapper" id="liberty"></div></div>
     <div class="bar authority" id="bar-authority"><div class="text-wrapper" id="authority"></div></div>
-    <img id="img-authority" src="value_images/authority.svg" height="128pt"/>
+    <img id="img-authority" src="value_images/Existentialism.svg" height="128pt"/>
 </div>
-<h2>Societal Axis: <span class="weight-300" id="society-label"></span></h2>
+<h2>Economic Axis: <span class="weight-300" id="society-label"></span></h2>
 <div class="axis">
-    <img id="img-tradition" src="value_images/tradition.svg" height="128pt"/>
+    <img id="img-tradition" src="value_images/AnCum.svg" height="128pt"/>
     <div class="bar tradition" id="bar-tradition"><div class="text-wrapper" id="tradition"></div></div>
     <div class="bar progress" id="bar-progress"><div class="text-wrapper" id="progress"></div></div>
-    <img id="img-progress" src="value_images/progress.svg" height="128pt"/>
+    <img id="img-progress" src="value_images/LWMA.svg" height="128pt"/>
 </div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
@@ -91,10 +91,10 @@ stats"></a></div></noscript>
         }
     }
 
-    econArray = ["Communist","Socialist","Social","Centrist","Market","Capitalist","Laissez-Faire"]
-    diplArray = ["Cosmopolitan","Internationalist","Peaceful","Balanced","Patriotic","Nationalist","Chauvinist"]
-    govtArray = ["Anarchist","Libertarian","Liberal","Moderate","Statist","Authoritarian","Totalitarian"]
-    sctyArray = ["Revolutionary","Very Progressive","Progressive","Neutral","Traditional","Very Traditional","Reactionary"]
+    econArray = ["Transhumanist","Futurist","Technological","Centrist","Agrarian","Primitive","Primal"]
+    diplArray = ["Hive-Mind","Collectivist","Selfless","Balanced","Selfish","Individualism","Egoist"]
+    govtArray = ["Nihilism","Cynicism","Skepticism","Moderate","Happy","Absurdism","Existentialism"]
+    sctyArray = ["Free Markets","Mutualism","Trading","Neutral","Mutual Aid","Gift Economy","Communism"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -222,10 +222,10 @@ stats"></a></div></noscript>
         ctx.fillText("8values.github.io", 780, 60)
 		ctx.fillText(version, 780, 90)
         ctx.textAlign="center"
-        ctx.fillText("Economic Axis: " + document.getElementById("economic-label").innerHTML, 400, 175)
-        ctx.fillText("Diplomatic Axis: " + document.getElementById("diplomatic-label").innerHTML, 400, 295)
-        ctx.fillText("Civil Axis: " + document.getElementById("state-label").innerHTML, 400, 415)
-        ctx.fillText("Societal Axis: " + document.getElementById("society-label").innerHTML, 400, 535)
+        ctx.fillText("Technology Axis: " + document.getElementById("economic-label").innerHTML, 400, 175)
+        ctx.fillText("Society Axis: " + document.getElementById("diplomatic-label").innerHTML, 400, 295)
+        ctx.fillText("Philosophy Axis: " + document.getElementById("state-label").innerHTML, 400, 415)
+        ctx.fillText("Economy Axis: " + document.getElementById("society-label").innerHTML, 400, 535)
 
         document.getElementById("banner").src = c.toDataURL();
     }
